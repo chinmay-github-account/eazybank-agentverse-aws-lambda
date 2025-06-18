@@ -1,0 +1,68 @@
+openapi: 3.0.0
+info:
+  title: User Details by Phone Number
+  version: 1.0.0
+  description: API to retrieve user details based on phone number.
+
+paths:
+  /getuserdetails:
+    get:
+      summary: Retrieve user details by phone number
+      description: Retrieves user details from the database using the provided phone number.
+      operationId: get_user_details
+      parameters:
+        - name: phone_no
+          in: query
+          description: The phone number of the user to retrieve.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response containing user details.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  phone_no:
+                    type: string
+                    description: The user's phone number.
+                  account_balance:
+                    type: string
+                    description: The user's account balance.
+                  account_number:
+                    type: string
+                    description: The user's account number.
+                  account_status:
+                    type: string
+                    description: The user's account status.
+                  credit_card_number:
+                    type: string
+                    description: The user's credit card number.
+                  reason:
+                    type: string
+                    description: The reason for the current account status.
+                  user_name:
+                    type: string
+                    description: The user's name.
+        '404':
+          description: User not found.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: Error message indicating that the user was not found.
+        '500':
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: Error message indicating an internal server error.
