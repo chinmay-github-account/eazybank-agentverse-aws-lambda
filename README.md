@@ -1,4 +1,4 @@
-# [Architecture + Testing Instructions]
+# [EazyBank AgentVerse Architecture + Testing Instructions]
 ![image](https://github.com/user-attachments/assets/3a7b43ba-081d-42f8-b5e5-30b8e7fcffbd)
 
 ## Testing Instructions: EazyBank AgentVerse
