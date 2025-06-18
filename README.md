@@ -1,5 +1,5 @@
 # [EazyBank AgentVerse Architecture + Testing Instructions]
-![image](https://github.com/user-attachments/assets/3a7b43ba-081d-42f8-b5e5-30b8e7fcffbd)
+![image](https://github.com/user-attachments/assets/a4ebbae9-47ea-44d7-8ecb-642a6520fc06)
 
 ## Testing Instructions: EazyBank AgentVerse
 
